@@ -1,13 +1,13 @@
-import Html
-import Html.Attributes
+import Html exposing (Html, div, h1, p, text)
+import Html.Attributes exposing (..)
 
-main : Html.Html
+main : Html
 main =
-  Html.div
-    [ Html.Attributes.class "wrapper" ]
-    [ Html.h1
-      [ Html.Attributes.class "headline" ]
-      [ Html.text "Hello World" ]
-    , Html.p []
-      [ Html.text "HTML, with qualified imports." ]
+  div
+    [ class "wrapper" ]
+    [ h1
+      [ class "headline" ]
+      [ text "Hello World" ]
+    , p []
+      [ text "HTML, with unqualified imports." ]
     ]
